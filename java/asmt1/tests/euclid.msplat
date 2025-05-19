@@ -1,0 +1,18 @@
+program
+    x := 189
+    y := 210
+    output x
+    output y
+    diff := x - y
+    while_pos diff * diff
+        if_pos diff
+            x := x - y
+        end
+        if_pos 0 - diff
+            y := y - x
+        end
+        output x
+        output y
+        diff := x - y
+    end
+end

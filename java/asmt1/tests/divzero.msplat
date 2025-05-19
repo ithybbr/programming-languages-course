@@ -1,0 +1,8 @@
+program
+    huge := 999999
+    denom := huge
+    while_pos denom
+        denom := denom / 2
+        output huge / denom
+    end
+end

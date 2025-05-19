@@ -1,0 +1,11 @@
+program
+    n := 7
+    i := 1
+    fac := 1
+    output fac
+    while_pos n - i
+        i := i + 1
+        fac := fac * i
+        output fac
+    end
+end

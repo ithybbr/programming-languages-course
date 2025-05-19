@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"lab4/Aquarium/Aquarium/src",
+			"lab4/Aquarium/Aquarium"
+		]
+	}
+}

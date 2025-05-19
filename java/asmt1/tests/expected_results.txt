@@ -1,0 +1,72 @@
+ *** Program factorials.msplat ***
+program
+n := 7
+i := 1
+fac := 1
+output fac
+while_pos n - i
+i := i + 1
+fac := fac * i
+output fac
+end
+end
+
+ *** Output ***
+1 2 6 24 120 720 5040 
+
+ *** Program euclid.msplat ***
+program
+x := 189
+y := 210
+output x
+output y
+diff := x - y
+while_pos diff * diff
+if_pos diff
+x := x - y
+end
+if_pos 0 - diff
+y := y - x
+end
+output x
+output y
+diff := x - y
+end
+end
+
+ *** Output ***
+189 210 189 21 168 21 147 21 126 21 105 21 84 21 63 21 42 21 21 21 
+
+ *** Program binaryrep.msplat ***
+program
+n := 10000
+while_pos n
+evenCheckA := n / 2
+evenCheckB := n + 1 / 2
+isEven := 1
+if_pos evenCheckB - evenCheckA
+output 1
+isEven := 0
+end
+if_pos isEven
+output 0
+end
+n := n / 2
+end
+end
+
+ *** Output ***
+0 0 0 0 1 0 0 0 1 1 1 0 0 1 
+
+ *** Program divzero.msplat ***
+program
+huge := 999999
+denom := huge
+while_pos denom
+denom := denom / 2
+output huge / denom
+end
+end
+
+Test successful... RunException thrown
+

@@ -1,0 +1,16 @@
+program
+    n := 10000
+    while_pos n
+        evenCheckA := n / 2
+        evenCheckB := n + 1 / 2
+        isEven := 1
+        if_pos evenCheckB - evenCheckA
+            output 1
+            isEven := 0
+        end
+        if_pos isEven
+            output 0
+        end
+        n := n / 2
+    end
+end
